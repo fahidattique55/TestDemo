@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="101" id="6cX-gl-jdo" userLabel="ListingShimmerCell" customClass="ListingShimmerCell" customModule="TestDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6cX-gl-jdo" id="1Jw-tc-zS2">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oL-cw-Gdb" customClass="View" customModule="TestDemo" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="288" height="122.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eL6-gA-Vlp">
+                                <rect key="frame" x="12" y="21.5" width="264" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Lc-yI-e4l">
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="13"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRe-PB-elo" customClass="FAShimmerLabelView" customModule="TestDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="13"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wRe-PB-elo" firstAttribute="top" secondItem="7Lc-yI-e4l" secondAttribute="top" id="5aU-Mx-x7J"/>
+                                            <constraint firstItem="wRe-PB-elo" firstAttribute="leading" secondItem="7Lc-yI-e4l" secondAttribute="leading" id="5eg-Ea-Crl"/>
+                                            <constraint firstAttribute="bottom" secondItem="wRe-PB-elo" secondAttribute="bottom" id="VHt-34-m0N"/>
+                                            <constraint firstItem="wRe-PB-elo" firstAttribute="width" secondItem="7Lc-yI-e4l" secondAttribute="width" id="m8I-Nu-noP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUZ-0W-qhZ">
+                                        <rect key="frame" x="0.0" y="33" width="264" height="13.5"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csh-Fy-bp1" customClass="FAShimmerLabelView" customModule="TestDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="211" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="csh-Fy-bp1" secondAttribute="bottom" id="5CU-m4-CP6"/>
+                                            <constraint firstItem="csh-Fy-bp1" firstAttribute="top" secondItem="hUZ-0W-qhZ" secondAttribute="top" id="OX4-r8-Tbx"/>
+                                            <constraint firstItem="csh-Fy-bp1" firstAttribute="leading" secondItem="hUZ-0W-qhZ" secondAttribute="leading" id="gLe-GX-qUa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSJ-kG-lJM">
+                                        <rect key="frame" x="0.0" y="66.5" width="264" height="13.5"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhG-ES-Yup" customClass="FAShimmerLabelView" customModule="TestDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="158.5" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="bhG-ES-Yup" firstAttribute="leading" secondItem="OSJ-kG-lJM" secondAttribute="leading" id="0jI-vH-Vnw"/>
+                                            <constraint firstItem="bhG-ES-Yup" firstAttribute="top" secondItem="OSJ-kG-lJM" secondAttribute="top" id="8eQ-Gf-Xsu"/>
+                                            <constraint firstAttribute="bottom" secondItem="bhG-ES-Yup" secondAttribute="bottom" id="Js9-LN-lTD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bhG-ES-Yup" firstAttribute="width" secondItem="csh-Fy-bp1" secondAttribute="width" multiplier="0.75" id="1OS-qP-OCV"/>
+                                    <constraint firstItem="csh-Fy-bp1" firstAttribute="width" secondItem="wRe-PB-elo" secondAttribute="width" multiplier="0.8" id="bsI-lh-ZE2"/>
+                                    <constraint firstAttribute="height" constant="80" id="zIN-Bl-1iv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eL6-gA-Vlp" firstAttribute="centerY" secondItem="9oL-cw-Gdb" secondAttribute="centerY" id="Njf-7F-VOV"/>
+                            <constraint firstAttribute="trailing" secondItem="eL6-gA-Vlp" secondAttribute="trailing" constant="12" id="Oyi-cf-GEo"/>
+                            <constraint firstItem="eL6-gA-Vlp" firstAttribute="leading" secondItem="9oL-cw-Gdb" secondAttribute="leading" constant="12" id="SLg-rD-jgu"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="122.5" id="t33-zp-yDE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9oL-cw-Gdb" secondAttribute="trailing" constant="16" id="7dI-5U-zAl"/>
+                    <constraint firstItem="9oL-cw-Gdb" firstAttribute="top" secondItem="1Jw-tc-zS2" secondAttribute="top" constant="16" id="fIU-94-kCS"/>
+                    <constraint firstItem="9oL-cw-Gdb" firstAttribute="leading" secondItem="1Jw-tc-zS2" secondAttribute="leading" constant="16" id="oLG-sT-3Ac"/>
+                    <constraint firstAttribute="bottom" secondItem="9oL-cw-Gdb" secondAttribute="bottom" constant="16" id="v3I-zS-ARP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Enq-W2-CnS"/>
+            <point key="canvasLocation" x="34" y="125.5"/>
+        </tableViewCell>
+    </objects>
+</document>
